@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\FeedbackController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,8 +29,13 @@ Route::get('/register', function () {
 
 Route::get('/profile', function () {
     return view('pages.profile');
-});
+})->middleware('auth')->name('profile');
 
 Route::get('/reserve', function () {
     return view('pages.reserve');
 });
+
+
+Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/register', [AuthController::class, 'register'])->name('register');
+Route::post('/post-feedback', [FeedbackController::class, 'store'])->name('feedback');

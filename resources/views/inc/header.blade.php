@@ -2,7 +2,7 @@
     <nav class="container px-6 py-5 mx-auto md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between">
             <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-2xl hover:text-green-400"
-                href="#">
+                href="/">
                 Resto
             </a>
             <!-- Mobile menu button -->
@@ -23,12 +23,18 @@
             <a class="text-lg text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
                 href="/">Home</a>
             <a class="text-lg text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                href="#section1">About Us</a>
-            <a class="text-lg text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                href="/login">SignIn</a>
+                href="#">About Us</a>
+            @if (!Auth::user())
+                <a class="text-lg text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
+                    href="/login">SignIn</a>
+            @else
+                {{-- {{dd(Auth::user())}} --}}
+                <a class="text-lg text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
+                    href="{{route('profile')}}">Profile</a>
+            @endif
             <div>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
             </div>
         </div>
