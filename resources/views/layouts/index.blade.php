@@ -10,7 +10,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 </head>
 <body>
-    
+
     @include('inc.header')
 
     @yield('content')
