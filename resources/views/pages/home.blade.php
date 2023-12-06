@@ -1,5 +1,4 @@
 @extends('layouts.index')
-
 @section('content')
 @include('inc.hero')
 <section class="px-2 py-32 bg-white md:px-0">
@@ -11,20 +10,17 @@
                         class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl"
                       > -->
 
-                    <h2 class="text-4xl text-green-600">Welcome</h2>
+                    <h2 class="text-4xl text-green-600" id='section1'>Welcome</h2>
                     <!-- </h1> -->
                     <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nemo incidunt praesentium,
-                        ipsum
-                        culpa minus eveniet, id nesciunt excepturi sit voluptate repudiandae. Explicabo, incidunt quia.
-                        Repellendus mollitia quaerat est voluptas!
+                        Welcome to our innovative website tailored for university students, where we've seamlessly connected with the university restaurant to address the issue of excessive food waste. Our platform empowers students to make a positive impact by providing them with the convenient ability to reserve their preferred dishes in advance. By facilitating dish reservations, we aim to optimize the restaurant's food preparation process, reducing unnecessary waste while ensuring that students can enjoy their favorite meals. This collaborative effort not only promotes sustainability but also contributes to a more efficient and eco-friendly dining experience for everyone involved.
                     </p>
 
                 </div>
             </div>
             <div class="w-full md:w-1/2">
-                <div class="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
-                    <img src="https://cdn.pixabay.com/photo/2017/08/03/13/30/people-2576336_960_720.jpg" />
+                <div class="w-full h-[500px]  overflow-hidden rounded-md shadow-xl sm:rounded-xl">
+                    <img src="https://scontent.ftun14-1.fna.fbcdn.net/v/t1.6435-9/32147955_859589334234153_2456473911785684992_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=300f58&_nc_ohc=HvPFHtdG-QUAX-TOD-m&_nc_ht=scontent.ftun14-1.fna&oh=00_AfDaWyFutDVAfnP5TF6guK2j9QNgdaRKb8-Nvd7s14yGqg&oe=6597ACC6" />
                 </div>
             </div>
         </div>
@@ -37,8 +33,8 @@
                 <div class="w-full lg:max-w-md">
                     <h2 class="mb-4 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
                         WHY CHOOSE US?</h2>
-                        <br>
-                        <br>
+                    <br>
+                    <br>
                     <ul>
                         <li class="flex items-center py-2 space-x-4 xl:py-3">
                             <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -63,14 +59,11 @@
         </div>
     </div>
 </section>
-
-
-
 <section class="pt-4 pb-12 bg-gray-800 flex flex-col items-center">
     <div class="my-16 text-center">
-        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 pb-4">
             Testimonial </h2>
-        <p class="text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. soluta sapient</p>
+        <p class="text-xl text-white pb-3">testimonial sharing the positive impact and satisfaction of our services.</p>
     </div>
     <div class="grid gap-2 lg:grid-cols-3">
         <div class="max-w-md p-4 bg-white rounded-lg shadow-lg">
@@ -78,12 +71,8 @@
                 <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
             </div>
             <div>
-                <h2 class="text-3xl font-semibold text-gray-800">Food</h2>
-                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
-                    deserunt
-                    ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis
-                    pariatur
-                    minus consequuntur!</p>
+                <h2 class="text-3xl font-semibold text-gray-800">Salad</h2>
+                <p class="mt-2 text-gray-600">The presentation of the food is top-notch.</p>
             </div>
             <div class="flex justify-end mt-4">
                 <a href="#" class="text-xl font-medium text-green-500">koussay</a>
@@ -94,12 +83,8 @@
                 <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full" src="https://cdn.pixabay.com/photo/2018/01/04/21/15/young-3061652__340.jpg">
             </div>
             <div>
-                <h2 class="text-3xl font-semibold text-gray-800">Food</h2>
-                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
-                    deserunt
-                    ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis
-                    pariatur
-                    minus consequuntur!</p>
+                <h2 class="text-3xl font-semibold text-gray-800">Soup</h2>
+                <p class="mt-2 text-gray-600">I love how fresh and vibrant the ingredients are.</p>
             </div>
             <div class="flex justify-end mt-4">
                 <a href="#" class="text-xl font-medium text-green-500">Azza</a>
@@ -110,12 +95,8 @@
                 <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full" src="https://cdn.pixabay.com/photo/2018/01/18/17/48/purchase-3090818__340.jpg">
             </div>
             <div>
-                <h2 class="text-3xl font-semibold text-gray-800">Food</h2>
-                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
-                    deserunt
-                    ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis
-                    pariatur
-                    minus consequuntur!</p>
+                <h2 class="text-3xl font-semibold text-gray-800">Couscous</h2>
+                <p class="mt-2 text-gray-600">The chef's attention to detail was evident in every aspect of the dining experience.</p>
             </div>
             <div class="flex justify-end mt-4">
                 <a href="#" class="text-xl font-medium text-green-500">Intissar</a>
@@ -123,11 +104,9 @@
         </div>
     </div>
 </section>
-
 <section class="pt-12 pb-12 bg-red-50">
     <div class="container flex items-center justify-center p-6 mx-auto bg-white shadow-lg sm:p-12 md:w-1/2">
         <div class="w-full">
-
             <h1 class="mb-4 text-2xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
                 Give Us Your Feedback
             </h1>
@@ -145,7 +124,6 @@
                     <input type="text" class="w-full px-4 py-2 text-base border rounded-md focus:border-green-400 focus:outline-none focus:ring-1 focus:ring-green-600" placeholder="Your Number" />
                 </div>
             </div>
-
             <div class="">
                 <label class="block text-base">
                     Your Message
@@ -155,8 +133,8 @@
             <button class="px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-green-600 border border-transparent rounded-lg active:bg-green-600 hover:bg-green-700 focus:outline-none focus:shadow-outline-green" href="#">
                 Submit
             </button>
-
         </div>
     </div>
 </section>
+<script src="../../js//app.js"></script>
 @endsection
